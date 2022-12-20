@@ -1,0 +1,707 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		505015432951FA8700EB6364 /* nebularemoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505015422951FA8700EB6364 /* nebularemoteApp.swift */; };
+		505015472951FA8800EB6364 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 505015462951FA8800EB6364 /* Assets.xcassets */; };
+		5050154B2951FA8800EB6364 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5050154A2951FA8800EB6364 /* Preview Assets.xcassets */; };
+		505015552951FA8800EB6364 /* nebularemoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505015542951FA8800EB6364 /* nebularemoteTests.swift */; };
+		5050155F2951FA8800EB6364 /* nebularemoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5050155E2951FA8800EB6364 /* nebularemoteUITests.swift */; };
+		505015612951FA8800EB6364 /* nebularemoteUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505015602951FA8800EB6364 /* nebularemoteUITestsLaunchTests.swift */; };
+		5050156E2951FF4F00EB6364 /* RemoteControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5050156D2951FF4F00EB6364 /* RemoteControlView.swift */; };
+		50501574295205D500EB6364 /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50501573295205D500EB6364 /* BluetoothManager.swift */; };
+		505015762952062900EB6364 /* StripeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505015752952062900EB6364 /* StripeState.swift */; };
+		505015782952063E00EB6364 /* StripeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505015772952063E00EB6364 /* StripeData.swift */; };
+		5050157B2952067400EB6364 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5050157A2952067400EB6364 /* MainView.swift */; };
+		5050157D295206A500EB6364 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5050157C295206A500EB6364 /* MainViewModel.swift */; };
+		505015832952071B00EB6364 /* Set+Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505015822952071B00EB6364 /* Set+Cancellable.swift */; };
+		505015852952074400EB6364 /* DeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505015842952074400EB6364 /* DeviceView.swift */; };
+		505015872952077400EB6364 /* DeviceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505015862952077400EB6364 /* DeviceViewModel.swift */; };
+		5050158A295207AD00EB6364 /* DevicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50501589295207AD00EB6364 /* DevicesView.swift */; };
+		5050158C295207C300EB6364 /* DevicesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5050158B295207C300EB6364 /* DevicesViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		505015512951FA8800EB6364 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 505015372951FA8700EB6364 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5050153E2951FA8700EB6364;
+			remoteInfo = nebularemote;
+		};
+		5050155B2951FA8800EB6364 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 505015372951FA8700EB6364 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5050153E2951FA8700EB6364;
+			remoteInfo = nebularemote;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5050153F2951FA8700EB6364 /* nebularemote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nebularemote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		505015422951FA8700EB6364 /* nebularemoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nebularemoteApp.swift; sourceTree = "<group>"; };
+		505015462951FA8800EB6364 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		505015482951FA8800EB6364 /* nebularemote.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = nebularemote.entitlements; sourceTree = "<group>"; };
+		5050154A2951FA8800EB6364 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		505015502951FA8800EB6364 /* nebularemoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nebularemoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		505015542951FA8800EB6364 /* nebularemoteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nebularemoteTests.swift; sourceTree = "<group>"; };
+		5050155A2951FA8800EB6364 /* nebularemoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nebularemoteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5050155E2951FA8800EB6364 /* nebularemoteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nebularemoteUITests.swift; sourceTree = "<group>"; };
+		505015602951FA8800EB6364 /* nebularemoteUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nebularemoteUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5050156D2951FF4F00EB6364 /* RemoteControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteControlView.swift; sourceTree = "<group>"; };
+		50501573295205D500EB6364 /* BluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
+		505015752952062900EB6364 /* StripeState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeState.swift; sourceTree = "<group>"; };
+		505015772952063E00EB6364 /* StripeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeData.swift; sourceTree = "<group>"; };
+		5050157A2952067400EB6364 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		5050157C295206A500EB6364 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		505015822952071B00EB6364 /* Set+Cancellable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Set+Cancellable.swift"; sourceTree = "<group>"; };
+		505015842952074400EB6364 /* DeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceView.swift; sourceTree = "<group>"; };
+		505015862952077400EB6364 /* DeviceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceViewModel.swift; sourceTree = "<group>"; };
+		50501589295207AD00EB6364 /* DevicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesView.swift; sourceTree = "<group>"; };
+		5050158B295207C300EB6364 /* DevicesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5050153C2951FA8700EB6364 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5050154D2951FA8800EB6364 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		505015572951FA8800EB6364 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		505015362951FA8700EB6364 = {
+			isa = PBXGroup;
+			children = (
+				505015412951FA8700EB6364 /* nebularemote */,
+				505015532951FA8800EB6364 /* nebularemoteTests */,
+				5050155D2951FA8800EB6364 /* nebularemoteUITests */,
+				505015402951FA8700EB6364 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		505015402951FA8700EB6364 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5050153F2951FA8700EB6364 /* nebularemote.app */,
+				505015502951FA8800EB6364 /* nebularemoteTests.xctest */,
+				5050155A2951FA8800EB6364 /* nebularemoteUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		505015412951FA8700EB6364 /* nebularemote */ = {
+			isa = PBXGroup;
+			children = (
+				505015422951FA8700EB6364 /* nebularemoteApp.swift */,
+				5050156D2951FF4F00EB6364 /* RemoteControlView.swift */,
+				5050158E295207D800EB6364 /* Views */,
+				50501581295206FA00EB6364 /* Extensions */,
+				505015792952064C00EB6364 /* Models */,
+				505015462951FA8800EB6364 /* Assets.xcassets */,
+				505015482951FA8800EB6364 /* nebularemote.entitlements */,
+				505015492951FA8800EB6364 /* Preview Content */,
+			);
+			path = nebularemote;
+			sourceTree = "<group>";
+		};
+		505015492951FA8800EB6364 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5050154A2951FA8800EB6364 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		505015532951FA8800EB6364 /* nebularemoteTests */ = {
+			isa = PBXGroup;
+			children = (
+				505015542951FA8800EB6364 /* nebularemoteTests.swift */,
+			);
+			path = nebularemoteTests;
+			sourceTree = "<group>";
+		};
+		5050155D2951FA8800EB6364 /* nebularemoteUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5050155E2951FA8800EB6364 /* nebularemoteUITests.swift */,
+				505015602951FA8800EB6364 /* nebularemoteUITestsLaunchTests.swift */,
+			);
+			path = nebularemoteUITests;
+			sourceTree = "<group>";
+		};
+		505015792952064C00EB6364 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				50501573295205D500EB6364 /* BluetoothManager.swift */,
+				505015752952062900EB6364 /* StripeState.swift */,
+				505015772952063E00EB6364 /* StripeData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5050157E295206B500EB6364 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5050157A2952067400EB6364 /* MainView.swift */,
+				5050157C295206A500EB6364 /* MainViewModel.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		50501581295206FA00EB6364 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				505015822952071B00EB6364 /* Set+Cancellable.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		505015882952079600EB6364 /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				505015842952074400EB6364 /* DeviceView.swift */,
+				505015862952077400EB6364 /* DeviceViewModel.swift */,
+			);
+			path = Device;
+			sourceTree = "<group>";
+		};
+		5050158D295207CD00EB6364 /* Devices */ = {
+			isa = PBXGroup;
+			children = (
+				50501589295207AD00EB6364 /* DevicesView.swift */,
+				5050158B295207C300EB6364 /* DevicesViewModel.swift */,
+			);
+			path = Devices;
+			sourceTree = "<group>";
+		};
+		5050158E295207D800EB6364 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5050157E295206B500EB6364 /* Main */,
+				5050158D295207CD00EB6364 /* Devices */,
+				505015882952079600EB6364 /* Device */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5050153E2951FA8700EB6364 /* nebularemote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 505015642951FA8800EB6364 /* Build configuration list for PBXNativeTarget "nebularemote" */;
+			buildPhases = (
+				5050153B2951FA8700EB6364 /* Sources */,
+				5050153C2951FA8700EB6364 /* Frameworks */,
+				5050153D2951FA8700EB6364 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = nebularemote;
+			productName = nebularemote;
+			productReference = 5050153F2951FA8700EB6364 /* nebularemote.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5050154F2951FA8800EB6364 /* nebularemoteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 505015672951FA8800EB6364 /* Build configuration list for PBXNativeTarget "nebularemoteTests" */;
+			buildPhases = (
+				5050154C2951FA8800EB6364 /* Sources */,
+				5050154D2951FA8800EB6364 /* Frameworks */,
+				5050154E2951FA8800EB6364 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				505015522951FA8800EB6364 /* PBXTargetDependency */,
+			);
+			name = nebularemoteTests;
+			productName = nebularemoteTests;
+			productReference = 505015502951FA8800EB6364 /* nebularemoteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		505015592951FA8800EB6364 /* nebularemoteUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5050156A2951FA8800EB6364 /* Build configuration list for PBXNativeTarget "nebularemoteUITests" */;
+			buildPhases = (
+				505015562951FA8800EB6364 /* Sources */,
+				505015572951FA8800EB6364 /* Frameworks */,
+				505015582951FA8800EB6364 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5050155C2951FA8800EB6364 /* PBXTargetDependency */,
+			);
+			name = nebularemoteUITests;
+			productName = nebularemoteUITests;
+			productReference = 5050155A2951FA8800EB6364 /* nebularemoteUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		505015372951FA8700EB6364 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					5050153E2951FA8700EB6364 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					5050154F2951FA8800EB6364 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 5050153E2951FA8700EB6364;
+					};
+					505015592951FA8800EB6364 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 5050153E2951FA8700EB6364;
+					};
+				};
+			};
+			buildConfigurationList = 5050153A2951FA8700EB6364 /* Build configuration list for PBXProject "nebularemote" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 505015362951FA8700EB6364;
+			productRefGroup = 505015402951FA8700EB6364 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5050153E2951FA8700EB6364 /* nebularemote */,
+				5050154F2951FA8800EB6364 /* nebularemoteTests */,
+				505015592951FA8800EB6364 /* nebularemoteUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5050153D2951FA8700EB6364 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5050154B2951FA8800EB6364 /* Preview Assets.xcassets in Resources */,
+				505015472951FA8800EB6364 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5050154E2951FA8800EB6364 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		505015582951FA8800EB6364 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5050153B2951FA8700EB6364 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5050158C295207C300EB6364 /* DevicesViewModel.swift in Sources */,
+				505015762952062900EB6364 /* StripeState.swift in Sources */,
+				5050157B2952067400EB6364 /* MainView.swift in Sources */,
+				505015852952074400EB6364 /* DeviceView.swift in Sources */,
+				505015782952063E00EB6364 /* StripeData.swift in Sources */,
+				505015832952071B00EB6364 /* Set+Cancellable.swift in Sources */,
+				5050158A295207AD00EB6364 /* DevicesView.swift in Sources */,
+				505015872952077400EB6364 /* DeviceViewModel.swift in Sources */,
+				5050156E2951FF4F00EB6364 /* RemoteControlView.swift in Sources */,
+				50501574295205D500EB6364 /* BluetoothManager.swift in Sources */,
+				505015432951FA8700EB6364 /* nebularemoteApp.swift in Sources */,
+				5050157D295206A500EB6364 /* MainViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5050154C2951FA8800EB6364 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				505015552951FA8800EB6364 /* nebularemoteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		505015562951FA8800EB6364 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5050155F2951FA8800EB6364 /* nebularemoteUITests.swift in Sources */,
+				505015612951FA8800EB6364 /* nebularemoteUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		505015522951FA8800EB6364 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5050153E2951FA8700EB6364 /* nebularemote */;
+			targetProxy = 505015512951FA8800EB6364 /* PBXContainerItemProxy */;
+		};
+		5050155C2951FA8800EB6364 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5050153E2951FA8700EB6364 /* nebularemote */;
+			targetProxy = 5050155B2951FA8800EB6364 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		505015622951FA8800EB6364 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		505015632951FA8800EB6364 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		505015652951FA8800EB6364 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = nebularemote/nebularemote.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"nebularemote/Preview Content\"";
+				DEVELOPMENT_TEAM = W9CC4898V6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Control BLE ";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fritzy.nebularemote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		505015662951FA8800EB6364 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = nebularemote/nebularemote.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"nebularemote/Preview Content\"";
+				DEVELOPMENT_TEAM = W9CC4898V6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Control BLE ";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fritzy.nebularemote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		505015682951FA8800EB6364 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W9CC4898V6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fritzy.nebularemoteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nebularemote.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/nebularemote";
+			};
+			name = Debug;
+		};
+		505015692951FA8800EB6364 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W9CC4898V6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fritzy.nebularemoteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nebularemote.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/nebularemote";
+			};
+			name = Release;
+		};
+		5050156B2951FA8800EB6364 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W9CC4898V6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fritzy.nebularemoteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = nebularemote;
+			};
+			name = Debug;
+		};
+		5050156C2951FA8800EB6364 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W9CC4898V6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fritzy.nebularemoteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = nebularemote;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5050153A2951FA8700EB6364 /* Build configuration list for PBXProject "nebularemote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				505015622951FA8800EB6364 /* Debug */,
+				505015632951FA8800EB6364 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		505015642951FA8800EB6364 /* Build configuration list for PBXNativeTarget "nebularemote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				505015652951FA8800EB6364 /* Debug */,
+				505015662951FA8800EB6364 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		505015672951FA8800EB6364 /* Build configuration list for PBXNativeTarget "nebularemoteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				505015682951FA8800EB6364 /* Debug */,
+				505015692951FA8800EB6364 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5050156A2951FA8800EB6364 /* Build configuration list for PBXNativeTarget "nebularemoteUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5050156B2951FA8800EB6364 /* Debug */,
+				5050156C2951FA8800EB6364 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 505015372951FA8700EB6364 /* Project object */;
+}
